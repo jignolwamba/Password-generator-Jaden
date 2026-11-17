@@ -15,6 +15,7 @@ function Str_Random(length) {
 
 function Generate() {
   document.getElementById("curruentvalue").value = Str_Random(16);
+  document.getElementById("status").innerHTML = "Mot de passe généré.";
 }
 // Essaie ensuite de faire apparaître « Bonjour » au clic.
 let input = document.getElementById("curruentvalue");
@@ -27,6 +28,7 @@ copyText = (e) => {
     navigator.clipboard.writeText(input.value).then(() => {
       // We confirm the action in the console
       console.log("Text Copied !");
+      document.getElementById("status").innerHTML = "Mot de passe copié.";
     });
   } else {
     console.log("The input is empty ");
