@@ -4,10 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Générateur de mots de passe · EDEN School</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- Étape CSS : relie style.css ici. -->
     <!-- Étape JavaScript : charge assets/hasard.js puis script.js ici avec defer. -->
   </head>
   <body>
-    <main></main>
+    <main>
+      <section class="Top">
+        <div class="right">
+          <h2 class="ED">EDEN School</h2>
+          <h1>Générateur de mots de passe</h1>
+        </div>
+
+        <img class="imgleft" src="/assets/cle.svg" alt="" />
+      </section>
+      <section class="Bottom">
+        <div class="Mot16cdqs">
+          <h2 class="motdepasse">Mot de passe</h2>
+          <p class="caractères">16 caractères</p>
+        </div>
+        <div class="random">
+          <input
+            class="input"
+            type="text"
+            value="En attente du clic"
+            id="curruentvalue" />
+          <button
+            id="copy"
+            content=""
+            onclick="copyText(event)"
+            class="copierbtn">
+            <img class="copierimg" src="/assets/copie.svg" alt="" />
+            <p class="copier">Copier</p>
+          </button>
+        </div>
+        <button class="submitbtn" onclick="Generate()" id="" type="submit">
+          Générer un mot de passe
+        </button>
+      </section>
+    </main>
   </body>
+  <script src="script.js"></script>
 </html>

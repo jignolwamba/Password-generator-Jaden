@@ -5,4 +5,208 @@
   font-display: swap;
 }
 
-/* Étape CSS : écris ici les règles de la carte et de ses éléments. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  background: #f6f6f2;
+  font-family: Inter, sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 6px 6px 0 #000;
+}
+.Top {
+  display: flex;
+  flex-direction: row;
+  width: 556px;
+  height: 193px;
+  justify-content: space-between;
+  padding: 32px;
+  opacity: 1;
+  background: var(--Turquoise, rgba(120, 223, 219, 1));
+  border-bottom: #000 2px solid;
+}
+.right {
+  width: 320px;
+  height: 128px;
+  gap: 20px;
+  angle: 0 deg;
+  opacity: 1;
+}
+.imgleft {
+  width: 80.5px;
+  height: 80.5px;
+  border-width: 3px;
+  angle: 0 deg;
+  opacity: 1;
+  top: 1.75px;
+  left: 1.75px;
+}
+h1 {
+  width: 292px;
+  height: 90px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 800;
+  font-style: Extra Bold;
+  font-size: 44px;
+  leading-trim: NONE;
+  line-height: 45px;
+  letter-spacing: -4.5%;
+}
+.ED {
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 15px;
+
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.Bottom {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+  height: 236px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+}
+
+.Mot16cdqs {
+  display: flex;
+  align-items: center;
+  width: 492px;
+  height: 20px;
+  justify-content: space-between;
+  angle: 0 deg;
+  opacity: 1;
+}
+.motdepasse {
+  height: 20px;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--Encre, rgba(0, 0, 0, 1));
+}
+.caractères {
+  height: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--Secondaire, rgba(74, 74, 80, 1));
+}
+.random {
+  display: flex;
+  width: 492px;
+  height: 56px;
+  border-radius: 10px;
+  border-width: 2px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  padding: 8px 8px 8px 14px;
+  color: var(--Blanc, rgba(255, 255, 255, 1));
+  border: 2px solid var(--Encre, rgba(0, 0, 0, 1));
+}
+.input {
+  height: 22px;
+  angle: 0 deg;
+  opacity: 1;
+  color: var(--Indication, rgba(89, 89, 96, 1));
+
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0%;
+
+  border: 0px;
+}
+.copierbtn {
+  display: flex;
+  align-items: center;
+  width: 94px;
+  height: 40px;
+  border-radius: 6px;
+  gap: 6px;
+  angle: 0 deg;
+  opacity: 1;
+  background: var(--Inactif, rgba(233, 233, 229, 1));
+  &[content] {
+    &:before {
+      color: black;
+      font-size: 1rem;
+    }
+    &:hover {
+      background: white;
+      &:before {
+      }
+    }
+    &:focus {
+      background: rgba(120, 223, 219, 1);
+      &:before {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+.copierimg {
+  width: 18px;
+  height: 18px;
+  opacity: 0.65;
+}
+.copier {
+  color: var(--Secondaire, rgba(74, 74, 80, 1));
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.submitbtn {
+  width: 492px;
+  height: 52px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: var(--Blanc, rgba(255, 255, 255, 1));
+  background: var(--Encre, rgba(0, 0, 0, 1));
+}
